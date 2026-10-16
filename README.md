@@ -34,8 +34,19 @@ De controles gebruiken DOM-emulatie en vervangen geen visuele browsertest.
 
 ## Publiceren
 
-Deze repository publiceert de website niet automatisch. De voorvertoning is
+De workflow `.github/workflows/pages.yml` publiceert `main` via GitHub Pages
+op https://gillianmarechal.github.io/ATN-website/. De voorvertoning is
 standaard `noindex`. Het definitieve domein wordt met ATN gekozen.
+
+De aparte Pages-bouw past links en browserinteracties aan voor de projectmap:
+
+```sh
+node prepare-pages.mjs /ATN-website https://gillianmarechal.github.io
+node test-pages.mjs
+```
+
+Het Pages-resultaat staat in `.local/pages/`; `dist/` blijft bruikbaar voor hosting
+op een eigen domein of Sites. Alleen de gebouwde website wordt gepubliceerd.
 
 Stel bij de publieke bouw `SITE_ORIGIN` in op het definitieve HTTPS-domein en
 `SEO_INDEXABLE=true`. Voer daarna `npm run build` uit en publiceer `dist/`.

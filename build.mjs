@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-const dist=path.resolve('dist');
+const dist=path.resolve(process.env.SITE_OUTPUT||'dist');
 import {origin,indexable,seoGraph,localContent} from './seo.mjs';
 import {comfortPage} from './comfort-page.mjs';
 const paths={
