@@ -11,5 +11,7 @@ Use case: photorealistic-natural. Asset type: website feature image for sanitary
 Logo: bestaande ATN-huisstijl uit ../Final/logos/ATN-logo-transparant.png. Alleen webformaat en favicon afgeleid; ontwerp behouden.
 Identiteit: dist/assets/identity-card.webp is een webexport van het originele ATN-voorzijde-600dpi.png, zonder gewijzigde indeling of letters.
 Woordmerk: dist/assets/wordmark.webp hergebruikt de ATN bv-letters uit hetzelfde originele kaartontwerp. De letters zijn niet opnieuw gezet. Bronuitsnede: x=1075, y=330, breedte=720, hoogte=180.
+Transparantie: dist/assets/wordmark-transparent.svg bevat dezelfde oorspronkelijke letters met een alfafilter. De donkere rechthoek wordt volledig transparant; er wordt geen achtergrondkleur nagebootst of overvloeimodus gebruikt.
+Fotoplaceholder: neutrale SVG-silhouet in build.mjs, expliciet gemarkeerd als Fotovoorstel. Het stelt geen echte of verzonnen persoon voor en wordt vervangen zodra zaakvoerder.png beschikbaar is.
 Contactgegevens: overgenomen uit het bestaande visitekaartje en de bestaande vCard.
 Lettertype: Manrope, lokaal geladen. Licentie: dist/assets/Manrope-OFL.txt.
