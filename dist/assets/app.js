@@ -1,3 +1,4 @@
+import {readBrief,scene} from './comfort-model.js';
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#nav');
 const servicesMenu = document.querySelector('.nav-services');
@@ -9,13 +10,20 @@ nav?.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(servicesMenu?.open){servicesMenu.open=false;servicesMenu.querySelector('summary').focus();}else if(nav?.classList.contains('open')){closeMenu();menu.focus();}});
 document.addEventListener('click',e=>{if(servicesMenu?.open&&!e.target.closest('.nav-services'))servicesMenu.open=false;if(nav?.classList.contains('open')&&!e.target.closest('.header'))closeMenu();});
 document.addEventListener('focusin',e=>{if(servicesMenu?.open&&!servicesMenu.contains(e.target))servicesMenu.open=false;});
-matchMedia('(min-width:851px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+matchMedia('(min-width:1101px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
 const form=document.querySelector('#request-form');
 if(form){
-  const selected=new URLSearchParams(location.search).get('dienst');
+  const params=new URLSearchParams(location.search);
+  const selected=params.getAll('dienst');
   const allowed=[...form.querySelectorAll('[data-slug]')];
-  const preselect=allowed.find(input=>input.dataset.slug===selected);
-  if(preselect)preselect.checked=true;
+  const brief=readBrief(location.search);
+  const wanted=brief?brief.services:selected;
+  allowed.forEach(input=>{if(wanted.includes(input.dataset.slug))input.checked=true;});
+  if(brief)form.elements.bericht.value=brief.text;
+  else if(['warmte','koelte','lucht'].includes(params.get('sim'))){
+    const state=scene(params.get('sim'),params.get('temperatuur'),1);
+    form.elements.bericht.value='Ik heb de comfortstudio bekeken.\nInteresse: '+state.label+(state.mode==='lucht'?'':'\nMijn temperatuurvoorkeur: '+state.temperature+' °C')+'\n\nMeer over mijn ruimte:\n';
+  }
   const result=document.querySelector('#email-result');
   let requestText='';
   form.addEventListener('submit',e=>{

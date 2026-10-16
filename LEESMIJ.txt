@@ -28,10 +28,13 @@ Contactformulier
 Het formulier maakt een e-mailconcept. Een bezoeker opent dit in het eigen e-mailprogramma en verstuurt het zelf. De website verzendt geen berichten en slaat de formuliergegevens niet op. Er is dus geen automatische e-maildienst geconfigureerd. De kopieerfunctie biedt een alternatief als geen e-mailprogramma is ingesteld.
 
 Publicatie
-De Sites-versie is privé. Voor het uiteindelijke eigen domein moeten de origin-instelling in build.mjs, sitemap en canonical-links worden bijgewerkt en moet de definitieve hosting worden ingesteld. De bedrijfsgegevens zijn afkomstig van het aangeleverde kaartje.
+De Sites-versie is privé. Het definitieve domein wordt nog met ATN gekozen. Stel bij publieke lancering SITE_ORIGIN en SEO_INDEXABLE=true in; build.mjs maakt daarmee sitemap, canonicals en indexeringsinstellingen aan. Standaard blijft de voorvertoning noindex. Zie SEO-OPLEVERING.txt voor de resterende lanceringstappen en Google-opzet. De Sites-koppeling vindt het bestaande project momenteel niet terug: de nieuwste wijzigingen zijn lokaal, nog niet gepubliceerd.
 
 Beelden
 ASSETS.txt bevat de bronvermelding en de exacte prompts van de twee gegenereerde sfeerbeelden. Op de website worden deze als sfeerbeelden aangeduid; er worden geen projecten, certificaten, reviews of aantallen klanten verzonnen.
 
+Interactieve uitbreiding
+De elfde pagina /comfort/ bevat de comfortkeuzehulp, het interactieve huis en de illustratieve comfortstudio. Bronnen: comfort-page.mjs, dist/assets/comfort.css, comfort.js en comfort-model.js. Keuzes gaan via gecontroleerde URL-waarden mee naar het bestaande contactformulier. Er is geen profielopslag. SEO-inhoud en bedrijfsgegevens staan in seo.mjs.
+
 Controle
-Alle tien pagina's, 17 interne links, schermbreedtes van 320, 390, 768 en 1440 pixels, dienstenmenu, toetsenbordnavigatie, mobiel menu, dienstselectie, verplichte velden, e-mailgegevens, kopieerfunctie en aanpassen van de aanvraag zijn in Chrome gecontroleerd. Het originele kaartontwerp behoudt zijn natuurlijke beeldverhouding. Geen browserfouten tijdens deze controles.
+De vorige websiteversie is in Chrome gecontroleerd op 320, 390, 768 en 1440 pixels. Die resultaten gelden niet als browsercontrole van de nieuwe uitbreiding. De uitbreiding is gecontroleerd met 374 logica-, DOM- en SEO-controles, waaronder aanvraagoverdracht en productie-/voorvertoningsinstellingen. Twaalf HTML-documenten en hun interne doelen zijn gecontroleerd. Een actuele visuele browsercontrole staat nog open omdat browsergebruik in deze sessie uitgeschakeld is.

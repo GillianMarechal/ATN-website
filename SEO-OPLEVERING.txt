@@ -1,0 +1,53 @@
+ATN bv - SEO en interactieve uitbreiding - 16 oktober 2026
+
+LOKAAL UITGEWERKT
+- Elf inhoudspagina's plus foutpagina; comfortpagina bevat drie interactieve delen.
+- Vijf dienstenpagina's: unieke lokale titel, H1, inhoud en beschrijving.
+- HVACBusiness, WebSite, WebPage, Service en BreadcrumbList gekoppeld via vaste IDs.
+- Sitemap, canonieke URLs, beschrijvende links, beeldbeschrijvingen en mobiele CSS.
+- Afbeeldingen onder de vouw lazy-loaded; lokaal lettertype; geen trackingbibliotheken.
+- Keuzehulp met aanvraagoverdracht, aanklikbaar huis en illustratieve comfortstudio.
+- 374 controles van logica, DOM-handlers, formulieroverdracht en beide SEO-buildmodi.
+- Beeldcontrole in een echte browser is nog niet uitgevoerd: browsergebruik staat uit.
+
+AFSPRAKEN MET OPDRACHTGEVER
+Domein nog te kiezen met ATN. Er is nog geen Google Bedrijfsprofiel opgezet.
+De offerte bevat eenmalige profielopzet, domeinlancering en Search Console-inrichting.
+Deze externe stappen zijn nog niet uitgevoerd. Geen eerste-plaatsgarantie.
+Sites-koppeling meldt project_not_found voor het bestaande project. Toegang herstellen
+voordat dit project via Sites kan worden gepubliceerd. Geen vervangend project aanmaken.
+
+PUBLIEKE LANCERING - NOG UIT TE VOEREN
+1. Kies met ATN het domein en regel eigendom, DNS en HTTPS. Bestaande Sites-toegang herstellen.
+2. Stel SITE_ORIGIN in op de definitieve HTTPS-origin en SEO_INDEXABLE op true.
+   Bouw met node build.mjs. Zonder deze variabelen blijft het een noindex-voorvertoning.
+3. Publiceer publiek na afgesproken toegangswijziging. Test HTTP 200, redirects naar één
+   voorkeursdomein, echte 404-respons, mobiel menu en de volledige aanvraagroute.
+4. Controleer dat hosting geen login of X-Robots-Tag noindex afdwingt. Controleer robots,
+   sitemap en canonicals op het definitieve domein, ook via Google URL-inspectie.
+5. Maak Google Search Console aan met ATN als eigenaar; verifieer DNS en dien sitemap in.
+6. Richt Google Bedrijfsprofiel in met de zaakvoerder. Voer alleen bevestigde gegevens in.
+   Bedrijfsnaam: ATN bv. Telefoon: +32 486 64 68 76. E-mail: info@atn-technix.be.
+   Registratieadres: Ten Anker 4, 8420 De Haan. Btw: BE1001.974.960.
+   Vraag of klanten werkelijk op dit adres worden ontvangen. Zo niet, configureer een
+   servicegebiedbedrijf met verborgen adres in plaats van een onbevestigde bezoeklocatie.
+   Bevestig werkgebied, openingstijden en passende beschikbare categorieën met ATN.
+   Voeg het definitieve domein, eigen logo, goedgekeurde portretfoto en echte werkfoto's toe.
+   Geen sfeerbeelden opvoeren als gerealiseerde ATN-projecten. ATN doorloopt verificatie.
+7. Meet na lancering mobiele snelheid en Core Web Vitals, controleer structured data.
+   Er zijn nog geen PageSpeed-scores of organische posities gemeten.
+8. Vraag echte klanten om een eerlijke review; geen gekochte reviews of verzonnen ratings.
+   Laat ATN echte projecten aanleveren voor verdere inhoud. Doorlopende SEO apart afspreken.
+
+BOUWEN EN TESTEN
+node build.mjs
+node qa/inspect.mjs (bestaande lokale regressiecontrole)
+Voor reproduceerbare DOM-tests: npm install --prefix .local linkedom@0.18.13
+node test-site.mjs
+De tests herstellen aan het einde altijd de noindex-voorvertoning.
+
+BRONNEN
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+https://developers.google.com/search/docs/appearance/structured-data/local-business
+https://support.google.com/business/answer/7091?hl=nl
+https://support.google.com/business/answer/3038177?hl=nl
