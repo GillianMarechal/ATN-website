@@ -1,0 +1,13 @@
+ATN website — beeldverantwoording
+
+Gemaakt met de ingebouwde image_gen-tool. De twee beelden zijn illustratieve sfeerbeelden, geen foto's van uitgevoerde ATN-projecten. Ze staan op de website als sfeerbeeld aangeduid.
+
+1. dist/assets/home.webp
+Use case: photorealistic-natural. Asset type: wide hero photograph for a premium Belgian HVAC and sanitary company website. Photorealistic editorial architectural photograph of an elegant contemporary Flemish coastal home at early blue hour, off-white brick, warm timber ceiling inside, dark thin window frames, expansive living room glowing warmly through floor to ceiling windows, grasses and a small mature tree, realistic modest scale, comfortable and welcoming rather than mansion. Large main volume situated toward the right two thirds, left third dark coastal foliage suitable for an eventual text overlay. Camera at eye level, precise architecture, understated design magazine quality, blue-gray dusk sky with generous open sky on top, warm amber interior balancing cool blue exterior. Wide landscape 16:9, no people, no logos, no writing, no pool, no snow. This is illustrative aspirational imagery, not a claimed completed project.
+
+2. dist/assets/bathroom.webp
+Use case: photorealistic-natural. Asset type: website feature image for sanitary and home comfort services. A serene contemporary Belgian bathroom, warm beige microcement and limestone textures, oak floating vanity, simple brushed stainless steel mixer tap, large oval mirror, elegant walk-in shower in background, soft natural side light, careful quiet composition, a folded towel and one branch in a vase, understated premium architectural photography. Wide landscape 3:2 composition. Realistic fittings and plumbing fixtures, no people, no logos, no text. Illustrative mood image, not a claimed actual installation.
+
+Logo: bestaande ATN-huisstijl uit ../Final/logos/ATN-logo-transparant.png. Alleen webformaat en favicon afgeleid; ontwerp behouden.
+Contactgegevens: overgenomen uit het bestaande visitekaartje en de bestaande vCard.
+Lettertype: Manrope, lokaal geladen. Licentie: dist/assets/Manrope-OFL.txt.

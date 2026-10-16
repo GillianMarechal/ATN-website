@@ -1,0 +1,27 @@
+ATN bv — complete website
+
+Inhoud
+- Homepage met de vijf diensten, over ATN, aanpak en veelgestelde vragen.
+- Vijf afzonderlijke dienstenpagina's.
+- Contactpagina met dienstkeuze, e-mailconcept en kopieerfunctie.
+- Privacyinformatie en een eigen 404-pagina.
+- Bestaand logo, contactbestand, geoptimaliseerde sfeerbeelden en lokaal lettertype.
+
+Gebruik
+De map dist bevat de complete statische website. Er is geen database of externe front-enddienst nodig. Plaats de inhoud van dist op hosting die index.html in submappen ondersteunt en 404.html als foutpagina instelt.
+
+Lokaal bekijken: vanuit deze map, node server.mjs. Open http://127.0.0.1:4173.
+Inhoud aanpassen: build.mjs. Pagina's opnieuw genereren: node build.mjs.
+Vormgeving: dist/assets/style.css. Interacties: dist/assets/app.js.
+
+Contactformulier
+Het formulier maakt een e-mailconcept. Een bezoeker opent dit in het eigen e-mailprogramma en verstuurt het zelf. De website verzendt geen berichten en slaat de formuliergegevens niet op. Er is dus geen automatische e-maildienst geconfigureerd. De kopieerfunctie biedt een alternatief als geen e-mailprogramma is ingesteld.
+
+Publicatie
+De Sites-versie is privé. Voor het uiteindelijke eigen domein moeten de origin-instelling in build.mjs, sitemap en canonical-links worden bijgewerkt en moet de definitieve hosting worden ingesteld. De bedrijfsgegevens zijn afkomstig van het aangeleverde kaartje.
+
+Beelden
+ASSETS.txt bevat de bronvermelding en de exacte prompts van de twee gegenereerde sfeerbeelden. Op de website worden deze als sfeerbeelden aangeduid; er worden geen projecten, certificaten, reviews of aantallen klanten verzonnen.
+
+Controle
+Alle acht pagina's, 17 interne links, schermbreedtes van 320, 390, 768 en 1440 pixels, mobiel menu, dienstselectie, verplichte velden, e-mailgegevens, kopieerfunctie en aanpassen van de aanvraag zijn in Chrome gecontroleerd. Geen browserfouten tijdens deze controles.

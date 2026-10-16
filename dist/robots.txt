@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atn-technix.gillian-mare-1074.chatgpt.site/sitemap.xml
