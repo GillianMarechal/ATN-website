@@ -34,7 +34,7 @@ De controles gebruiken DOM-emulatie en vervangen geen visuele browsertest.
 
 ## Publiceren
 
-De workflow `.github/workflows/pages.yml` publiceert `main` via GitHub Pages
+GitHub Pages publiceert de gebouwde website vanuit de branch `gh-pages`
 op https://gillianmarechal.github.io/ATN-website/. De voorvertoning is
 standaard `noindex`. Het definitieve domein wordt met ATN gekozen.
 
@@ -47,6 +47,12 @@ node test-pages.mjs
 
 Het Pages-resultaat staat in `.local/pages/`; `dist/` blijft bruikbaar voor hosting
 op een eigen domein of Sites. Alleen de gebouwde website wordt gepubliceerd.
+Werk bij een update de bestanden op `gh-pages` bij met het gecontroleerde
+Pages-resultaat. Een push op `main` publiceert niet automatisch.
+
+De eigen Actions-workflow is verwijderd omdat GitHub de account wegens een
+facturatieprobleem blokkeert voor Actions. De Pages-instelling gebruikt daarom
+branchpublicatie (`legacy`) met `.nojekyll`.
 
 Stel bij de publieke bouw `SITE_ORIGIN` in op het definitieve HTTPS-domein en
 `SEO_INDEXABLE=true`. Voer daarna `npm run build` uit en publiceer `dist/`.
