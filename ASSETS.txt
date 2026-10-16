@@ -9,5 +9,7 @@ Use case: photorealistic-natural. Asset type: wide hero photograph for a premium
 Use case: photorealistic-natural. Asset type: website feature image for sanitary and home comfort services. A serene contemporary Belgian bathroom, warm beige microcement and limestone textures, oak floating vanity, simple brushed stainless steel mixer tap, large oval mirror, elegant walk-in shower in background, soft natural side light, careful quiet composition, a folded towel and one branch in a vase, understated premium architectural photography. Wide landscape 3:2 composition. Realistic fittings and plumbing fixtures, no people, no logos, no text. Illustrative mood image, not a claimed actual installation.
 
 Logo: bestaande ATN-huisstijl uit ../Final/logos/ATN-logo-transparant.png. Alleen webformaat en favicon afgeleid; ontwerp behouden.
+Identiteit: dist/assets/identity-card.webp is een webexport van het originele ATN-voorzijde-600dpi.png, zonder gewijzigde indeling of letters.
+Woordmerk: dist/assets/wordmark.webp hergebruikt de ATN bv-letters uit hetzelfde originele kaartontwerp. De letters zijn niet opnieuw gezet. Bronuitsnede: x=1075, y=330, breedte=720, hoogte=180.
 Contactgegevens: overgenomen uit het bestaande visitekaartje en de bestaande vCard.
 Lettertype: Manrope, lokaal geladen. Licentie: dist/assets/Manrope-OFL.txt.

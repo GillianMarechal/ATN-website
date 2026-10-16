@@ -2,6 +2,9 @@ ATN bv — complete website
 
 Inhoud
 - Homepage met de vijf diensten, over ATN, aanpak en veelgestelde vragen.
+- Donkere ATN-huisstijl, origineel kaartontwerp en oorspronkelijke woordmerkletters.
+- Dienstenoverzicht en een afzonderlijke pagina over ATN.
+- Dienstenmenu op desktop en mobiel, actieve pagina-aanduiding en directe dienstnavigatie.
 - Vijf afzonderlijke dienstenpagina's.
 - Contactpagina met dienstkeuze, e-mailconcept en kopieerfunctie.
 - Privacyinformatie en een eigen 404-pagina.
@@ -24,4 +27,4 @@ Beelden
 ASSETS.txt bevat de bronvermelding en de exacte prompts van de twee gegenereerde sfeerbeelden. Op de website worden deze als sfeerbeelden aangeduid; er worden geen projecten, certificaten, reviews of aantallen klanten verzonnen.
 
 Controle
-Alle acht pagina's, 17 interne links, schermbreedtes van 320, 390, 768 en 1440 pixels, mobiel menu, dienstselectie, verplichte velden, e-mailgegevens, kopieerfunctie en aanpassen van de aanvraag zijn in Chrome gecontroleerd. Geen browserfouten tijdens deze controles.
+Alle tien pagina's, 17 interne links, schermbreedtes van 320, 390, 768 en 1440 pixels, dienstenmenu, toetsenbordnavigatie, mobiel menu, dienstselectie, verplichte velden, e-mailgegevens, kopieerfunctie en aanpassen van de aanvraag zijn in Chrome gecontroleerd. Het originele kaartontwerp behoudt zijn natuurlijke beeldverhouding. Geen browserfouten tijdens deze controles.

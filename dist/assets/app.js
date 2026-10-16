@@ -1,10 +1,14 @@
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#nav');
-function closeMenu(){nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false');menu?.setAttribute('aria-label','Menu openen');}
-menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';nav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Menu sluiten':'Menu openen');});
+const servicesMenu = document.querySelector('.nav-services');
+const menuIcon = menu?.querySelector('.icon path');
+const menuIconPath = menuIcon?.getAttribute('d');
+function closeMenu(){nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false');menu?.setAttribute('aria-label','Menu openen');if(menu){menu.querySelector('span').textContent='Menu';menuIcon.setAttribute('d',menuIconPath);}if(servicesMenu)servicesMenu.open=false;}
+menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';if(!open){closeMenu();return;}nav.style.setProperty('--nav-top',`${document.querySelector('.header').getBoundingClientRect().bottom}px`);nav.classList.add('open');menu.setAttribute('aria-expanded','true');menu.setAttribute('aria-label','Menu sluiten');menu.querySelector('span').textContent='Sluiten';menuIcon.setAttribute('d','m6 6 12 12M6 18 18 6');});
 nav?.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){closeMenu();menu.focus();}});
-document.addEventListener('click',e=>{if(nav?.classList.contains('open')&&!e.target.closest('.header'))closeMenu();});
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(servicesMenu?.open){servicesMenu.open=false;servicesMenu.querySelector('summary').focus();}else if(nav?.classList.contains('open')){closeMenu();menu.focus();}});
+document.addEventListener('click',e=>{if(servicesMenu?.open&&!e.target.closest('.nav-services'))servicesMenu.open=false;if(nav?.classList.contains('open')&&!e.target.closest('.header'))closeMenu();});
+document.addEventListener('focusin',e=>{if(servicesMenu?.open&&!servicesMenu.contains(e.target))servicesMenu.open=false;});
 matchMedia('(min-width:851px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
 const form=document.querySelector('#request-form');
 if(form){
