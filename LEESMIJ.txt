@@ -5,7 +5,7 @@ Inhoud
 - Donkere ATN-huisstijl, origineel kaartontwerp en oorspronkelijke woordmerkletters.
 - Dienstenoverzicht en een afzonderlijke pagina over ATN.
 - Dienstenmenu op desktop en mobiel, actieve pagina-aanduiding en directe dienstnavigatie.
-- Fotoplaceholder voor de zaakvoerder in het Over ATN-blok op de homepage, duidelijk aangeduid als fotovoorstel.
+- Bewerkt portret van de zaakvoerder in het Over ATN-blok op de homepage, met transparante achtergrond.
 - Transparant woordmerk in header en footer, met de oorspronkelijke lettervormen.
 - Duidelijk gescheiden secties door afwisselend antraciet, marineblauw en een helderder blauw vlak, met zichtbare scheidingslijnen.
 - Vijf afzonderlijke dienstenpagina's.
@@ -21,7 +21,7 @@ Inhoud aanpassen: build.mjs. Pagina's opnieuw genereren: node build.mjs.
 Vormgeving: dist/assets/style.css. Interacties: dist/assets/app.js.
 
 Foto van de zaakvoerder
-Plaats de echte uitgesneden foto als dist/assets/zaakvoerder.png, met transparante achtergrond. Genereer de pagina's daarna opnieuw met node build.mjs. De silhouet en de aanduiding Fotovoorstel worden automatisch vervangen door de foto. De foto wordt passend weergegeven met behoud van zijn verhoudingen.
+Het portret staat als dist/assets/zaakvoerder.png, met transparante achtergrond. Het is een bewerkte versie van de door de gebruiker aangeleverde foto. Achtergrond, tafelvoorwerpen en de warme restaurantbelichting zijn aangepast; de afgedekte delen van het hemd zijn aangevuld. Een toekomstige vervangende foto kan op dezelfde plaats worden gezet. Genereer de pagina's daarna opnieuw met node build.mjs. De foto wordt passend weergegeven met behoud van zijn verhoudingen.
 
 Contactformulier
 Het formulier maakt een e-mailconcept. Een bezoeker opent dit in het eigen e-mailprogramma en verstuurt het zelf. De website verzendt geen berichten en slaat de formuliergegevens niet op. Er is dus geen automatische e-maildienst geconfigureerd. De kopieerfunctie biedt een alternatief als geen e-mailprogramma is ingesteld.
