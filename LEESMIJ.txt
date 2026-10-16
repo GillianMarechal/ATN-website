@@ -7,6 +7,7 @@ Inhoud
 - Dienstenmenu op desktop en mobiel, actieve pagina-aanduiding en directe dienstnavigatie.
 - Fotoplaceholder voor de zaakvoerder in het Over ATN-blok op de homepage, duidelijk aangeduid als fotovoorstel.
 - Transparant woordmerk in header en footer, met de oorspronkelijke lettervormen.
+- Duidelijk gescheiden secties door afwisselend antraciet, marineblauw en een helderder blauw vlak, met zichtbare scheidingslijnen.
 - Vijf afzonderlijke dienstenpagina's.
 - Contactpagina met dienstkeuze, e-mailconcept en kopieerfunctie.
 - Privacyinformatie en een eigen 404-pagina.
