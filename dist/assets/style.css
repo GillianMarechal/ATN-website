@@ -44,3 +44,8 @@ main>.approach{background:var(--section-raised)}
 main>.detail-question{background:#0a1722}
 main>.cta{background:#214c66;border-top:1px solid #5a8098}
 .footer{border-top:1px solid var(--section-divider)}
+
+/* Each service keeps its own recognisable image in the overview. */
+.service-overview-item{gap:24px;padding:26px 0}.service-overview-image{display:block;width:176px;height:120px;object-fit:cover;object-position:center;border:1px solid #38536a;border-radius:3px;flex:none}.service-overview-item>div{min-width:0;flex:1}
+@media(max-width:850px){.service-overview-item{gap:20px}.service-overview-image{width:140px;height:105px}.service-overview-item h2{font-size:25px}}
+@media(max-width:600px){.service-overview-item{display:grid;grid-template-columns:88px minmax(0,1fr);position:relative;gap:16px;padding:24px 38px 24px 0}.service-overview-item>.service-overview-number,.service-overview-item>.icon{display:none}.service-overview-image{width:88px;height:88px}.service-overview-item h2{font-size:20px}.service-overview-item p{font-size:10px;margin-top:8px;line-height:1.75}.service-overview-item>.circle-arrow{position:absolute;right:0;top:50%;transform:translateY(-50%);margin:0}}

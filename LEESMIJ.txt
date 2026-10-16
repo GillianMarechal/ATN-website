@@ -9,6 +9,7 @@ Inhoud
 - Transparant woordmerk in header en footer, met de oorspronkelijke lettervormen.
 - Duidelijk gescheiden secties door afwisselend antraciet, marineblauw en een helderder blauw vlak, met zichtbare scheidingslijnen.
 - Vijf afzonderlijke dienstenpagina's.
+- Elke dienst heeft een eigen passend sfeerbeeld, ook zichtbaar in het dienstenoverzicht.
 - Contactpagina met dienstkeuze, e-mailconcept en kopieerfunctie.
 - Privacyinformatie en een eigen 404-pagina.
 - Bestaand logo, contactbestand, geoptimaliseerde sfeerbeelden en lokaal lettertype.
